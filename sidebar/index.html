@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/colors.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+  
+  <title>Sidebar</title>
+</head>
+<body>
+  <section id="sidebar" class="shrink">
+    <div id="header">
+      <img src="./assets/logo.svg" alt="Logo">
+      <button class="toggle">
+        <img src="./assets/menu.svg" alt="Menu">
+      </button>
+    </div>
+    <form action="#">
+      <div class="control">
+        <div class="img-container">
+          <img src="./assets/search.svg" alt="Busca">
+        </div>
+        <input type="text" placeholder="Buscar">
+      </div>
+    </form>
+    <nav>
+      <ul>
+        <li>
+          <img src="./assets/grid.svg" alt="Dashboard">
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <img src="./assets/pet.svg" alt="Pets">
+          <a href="#">Pets</a>
+        </li>
+        <li>
+          <img src="./assets/user.svg" alt="Clientes">
+          <a href="#">Clientes</a>
+        </li>
+        <li>
+          <img src="./assets/user-md.svg" alt="Vets">
+          <a href="#">Vets</a>
+        </li>
+        <li>
+          <img src="./assets/settings.svg" alt="Ajustes">
+          <a href="#">Ajustes</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="auth">
+      <div class="user">
+        <div class="img-container">
+          <img src="./assets/avatar.png" alt="Usuário">
+        </div>
+        <div class="user-info">
+          <strong>Eleanor Pena</strong>
+          <p>Veterinário</p>
+        </div>
+      </div>
+      <button>
+        <img src="./assets/log-out.svg" alt="Log Out">
+      </button>
+    </div>
+  </section>
+  <main>
+    <h1>Dashboard</h1>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>

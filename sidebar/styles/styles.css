@@ -1,0 +1,199 @@
+body {
+  display: flex;
+  min-height: 100vh;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar {
+  position: relative;
+
+  background: var(--green);
+  padding: 1rem;
+
+  width: 18rem;
+
+  transition: width 0.5s;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+}
+
+#sidebar form .control {
+  display: flex;
+  align-items: center;
+
+  border-radius: 1rem;
+
+  font-size: 15px;
+  color: var(--text-color);
+
+  background-color: var(--light-green);
+
+  margin-bottom: 1.5rem;
+}
+
+#sidebar form .control .img-container {
+  padding: 1rem;
+  width: 20%;
+}
+
+#sidebar form .control input {
+  padding: 1rem;
+  width: 80%;
+}
+
+#sidebar form .control input::placeholder {
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+#sidebar ul {
+  padding: 0 0.8rem;
+}
+
+#sidebar nav ul li {
+  display: flex;
+  align-items: center;
+
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+
+#sidebar nav ul li + li {
+  margin-top: 1.6rem;
+}
+
+#sidebar ul li a {
+  position: relative;
+
+  transition: all 0.3s;
+  margin-left: 1rem;
+}
+
+#sidebar ul li a::after {
+  content: ' ';
+  
+  width: 0;
+  height: 2px;
+  
+  background-color: var(--text-color);
+  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  transition: width 0.5s;
+}
+
+#sidebar ul li a:hover::after {
+  width: 100%;
+}
+
+
+#auth {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  background-color: var(--light-green);
+
+  font-size: 15px;
+  color: var(--text-color);
+
+  width: 100%;
+  height: 10%;
+  padding: 1rem;
+}
+
+#auth .user {
+  display: flex;
+  align-items: center;
+}
+
+#auth .user .user-info {
+  margin-left: 1rem;
+}
+
+#auth .img-container {
+  height: 24px;
+}
+
+#auth .img-container img {
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  
+  background: var(--body-bg-color);
+}
+
+#sidebar.shrink {
+  padding: 1rem 0.5rem;
+  width: 5rem;
+}
+
+#sidebar.shrink #header {
+  justify-content: center;
+}
+
+#sidebar.shrink #header > img {
+  opacity: 0;
+  width: 0;
+}
+
+#sidebar.shrink form .control input {
+  width: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+#sidebar.shrink form .control .img-container {
+  width: 100%;
+}
+
+#sidebar.shrink nav ul li {
+  justify-content: center;
+}
+
+#sidebar.shrink nav ul li a {
+  width: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+#sidebar.shrink #auth {
+  justify-content: center;
+}
+
+#sidebar.shrink #auth .user {
+  display: none;
+}
+
+
+@media (max-width: 440px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 9px;
+  }
+}
