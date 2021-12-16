@@ -1,6 +1,6 @@
 # Desafios do Discover
 
-### Aqui estão os desafios propostos pelo curso Discover da Rocketseat que venho realizando após assistir as aulas
+### Aqui estão os desafios propostos pelo curso Discover da Rocketseat
 
 ## Primeiro desafio: Sidebar
 - Neste desafio, construí uma sidebar usando HTML, CSS e JS
