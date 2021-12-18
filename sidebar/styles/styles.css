@@ -127,14 +127,17 @@ body {
 
 #auth .user .user-info {
   margin-left: 1rem;
-}
-
-#auth .img-container {
-  height: 24px;
+  
+  transition: font-size 0.5s;
 }
 
 #auth .img-container img {
+  max-height: 2.5rem;
   width: 100%;
+
+  border-radius: 0.6rem;
+  
+  transition: width 0.5s;
 }
 
 main {
@@ -182,7 +185,15 @@ main {
 }
 
 #sidebar.shrink #auth .user {
-  display: none;
+  position: absolute;
+}
+
+#sidebar.shrink #auth .user img {
+  width: 0;
+}
+
+#sidebar.shrink #auth .user .user-info {
+  font-size: 0;
 }
 
 
